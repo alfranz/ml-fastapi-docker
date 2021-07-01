@@ -12,12 +12,12 @@ Python libraries:
 - Gunicorn 
 - Uvicorn
 
-
 ## How to use?
 
+https://github.com/alfranz/ml-fastapi-docker/pkgs/container/ml-fastapi
 
 ```
-docker pull ghcr.io/../
+docker pull ghcr.io/alfranz/ml-fastapi:latest
 ```
 
 

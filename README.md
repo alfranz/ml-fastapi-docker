@@ -1,16 +1,23 @@
 # Machine Learning FastAPI Docker
 
-This Docker image contains dependencies to get started with developing and deploying ML services.
+[![Create and publish a Docker image](https://github.com/alfranz/ml-fastapi-docker/actions/workflows/build-image.yml/badge.svg)](https://github.com/alfranz/ml-fastapi-docker/actions/workflows/build-image.yml)
 
-Docker Base Image: Python3.9-slim-buster
+--- 
+
+This Docker image contains dependencies suitable for machine-learning powered webservices with HTML frontends.
+
+Docker Base Image: `python:3.9-slim-buster`
 
 Python libraries:
 
-- FastAPI 
-- Catboost
-- Pandas
-- Gunicorn 
-- Uvicorn
+- requests
+- Jinja2
+- aiofiles
+- uvicorn[standard]
+- gunicorn
+- fastapi
+- catboost
+- pandas
 
 ## How to use?
 

@@ -27,4 +27,6 @@ https://github.com/alfranz/ml-fastapi-docker/pkgs/container/ml-fastapi
 docker pull ghcr.io/alfranz/ml-fastapi:latest
 ```
 
+## Versions
 
+This image will use the latest compatible versions of all dependencies. Might add versioning later. For now enjoy at your own risk 🔥.

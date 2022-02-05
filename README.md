@@ -18,6 +18,7 @@ Python libraries:
 - fastapi
 - catboost
 - pandas
+- python-multipart
 
 ## How to use?
 

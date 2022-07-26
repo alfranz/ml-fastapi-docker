@@ -1,9 +1,1 @@
-requests
-Jinja2
-aiofiles
-uvicorn[standard]
-gunicorn
-fastapi
 catboost
-pandas
-python-multipart

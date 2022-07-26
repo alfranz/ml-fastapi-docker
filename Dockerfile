@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM ghcr.io/alfranz/fastapi-pandas:latest
 
 LABEL maintainer="Alexander Franz <alex@alexfranz.com>"
 

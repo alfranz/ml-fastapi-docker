@@ -2,11 +2,13 @@ name: Build Docker image
 
 on:
   push:
-    branches: ["master"]
+    tags:
+      - v*
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ml-fastapi
+  IMAGE_TAG: ${{github.ref_name}}
 
 jobs:
   build-and-push-image:
@@ -29,4 +31,6 @@ jobs:
       - name: Build and push the Docker image
         run: |
           docker build . --tag ghcr.io/alfranz/ml-fastapi:latest
+          docker build . --tag ghcr.io/alfranz/ml-fastapi:${{ env.IMAGE_TAG }}
           docker push ghcr.io/alfranz/ml-fastapi:latest
+          docker push ghcr.io/alfranz/ml-fastapi:${{ env.IMAGE_TAG }}
